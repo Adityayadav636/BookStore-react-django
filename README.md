@@ -21,13 +21,35 @@ PayPal Integration: PayPal buttons are integrated into the application to facili
 Technologies Used
 Django: Python-based web framework used for the backend development of the application.
 Django REST Framework: Powerful toolkit for building RESTful APIs with Django.
+User Endpoints:
+
+POST /api/users/register/: Register a new user.
+GET /api/users/profile/: Get the user's profile.
+PUT /api/users/profile/update/: Update the user's profile.
+POST /api/users/login/: Log in and obtain an authentication token.
+DELETE /api/users/delete/<str:pk>/: Delete a user account.
+Product Endpoints:
+
+GET /api/products/: Get all products.
+POST /api/products/<str:pk>/reviews/: Create a review for a product.
+GET /api/products/top/: Get top products.
+GET /api/products/<str:pk>/: Get a specific product.
+Order Endpoints:
+
+POST /api/orders/add/: Add order items.
+GET /api/orders/myorders/: Get orders for the currently authenticated user.
+GET /api/orders/<str:pk>/: Get a specific order by ID.
+PUT /api/orders/<str:pk>/pay/: Update the order status to "paid".
+
+
 Simple JWT: Library for adding JWT authentication to Django REST Framework.
 React: JavaScript library for building user interfaces.
-Redux Toolkit: Redux library that simplifies state management in React applications.
+Redux Toolkit: Redux library that simplifies state management in React applications , it is implemented nicely with mocking the apis and then writing pure functions to achienve.
+
 Material UI: React component library that provides pre-designed UI components following the Material Design principles.
 Bootstrap: CSS framework for creating responsive and visually appealing web pages.
 Deployment
-The application is deployed on AWS EC2, which provides scalable and reliable cloud computing resources. The deployment process involves configuring the EC2 instance, setting up security groups, and deploying the Django backend and React frontend on the instance. Additionally, Nginx or another web server can be used to serve the static files and handle HTTPS requests.
+The application is deployed on AWS EC2.
 
 Please note that deploying the application on AWS EC2 requires appropriate configuration and security measures to ensure a safe and reliable deployment.
 
