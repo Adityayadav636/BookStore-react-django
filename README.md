@@ -24,21 +24,33 @@ Django REST Framework: Powerful toolkit for building RESTful APIs with Django.
 User Endpoints:
 
 POST /api/users/register/: Register a new user.
+
 GET /api/users/profile/: Get the user's profile.
+
 PUT /api/users/profile/update/: Update the user's profile.
+
 POST /api/users/login/: Log in and obtain an authentication token.
+
 DELETE /api/users/delete/<str:pk>/: Delete a user account.
+
 Product Endpoints:
 
 GET /api/products/: Get all products.
+
 POST /api/products/<str:pk>/reviews/: Create a review for a product.
+
 GET /api/products/top/: Get top products.
+
 GET /api/products/<str:pk>/: Get a specific product.
+
 Order Endpoints:
 
 POST /api/orders/add/: Add order items.
+
 GET /api/orders/myorders/: Get orders for the currently authenticated user.
+
 GET /api/orders/<str:pk>/: Get a specific order by ID.
+
 PUT /api/orders/<str:pk>/pay/: Update the order status to "paid".
 
 
