@@ -1,9 +1,9 @@
 # BookStore-react-django
-[Visit Live Demo]( http://16.171.160.34:8000/#/  )
-
-
 
 [Visit video Demo](https://www.youtube.com/watch?v=NJnmgEatAjE)
+[Visit Live Demo]( http://16.171.160.34:8000/#/  )
+
+[message me I will check and restart the server](https://wa.me/916386983718)
 
 This is a Bookstore Application built using Django, Django REST Framework, Simple JWT, React, Redux Toolkit, Material UI, and Bootstrap. The application provides a comprehensive catalog of books with various features such as ecommerce facilities, search functionality, advanced filtering options, and PayPal integration.
 
